@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+}
+h2,
+h3 {
+  font-weight: 600;
+}
+a,
+.anchor,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: blue;
+}
+a:hover, .anchor:hover  {
+  cursor: pointer;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+.fas {
+  font-family: "Font Awesome 5 Free" !important;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+// @media (max-width: 400px) {}
+@media (min-width: 401px) {}
+body {
+  margin: 15px;
+}
