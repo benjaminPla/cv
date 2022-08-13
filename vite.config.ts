@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-export default defineConfig({
-  base: '/cv/',
-  plugins: [vue()]
-})
+import { defineConfig } from 'vite'                                             
+import vue from '@vitejs/plugin-vue'                                            
+                                                                                
+export default defineConfig({                                                   
+  base: '/cv/',                                                          
+  plugins: [vue()]                                                              
+})                                                                                                                                                  
