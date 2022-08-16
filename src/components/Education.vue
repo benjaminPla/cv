@@ -1,5 +1,6 @@
 <template>
-  <h2>EDUCATION</h2>
+  <h2>{{ $t('message.education.title') }}</h2>
+  <h3>{{ $t('message.education.diploma') }}</h3>
   <ul>
     <li>
       2021 -
@@ -23,13 +24,16 @@
     </li>
   </ul>
   <Popup v-if='diploma' @close='diploma = 0' :img='diploma'/>
-  <h3>LANGUAGES</h3>
+  <h3>{{ $t('message.education.languages.title') }}</h3>
   <ul>
-    <li>SPANISH - NATIVE</li>
-    <li>ENGLISH - INTERMEDIATE HIGH
-      <i @click='toggleEnglish' class='anchor fa-solid fa-square-arrow-up-right'></i>
+    <li>{{ $t('message.education.languages.spanish') }}</li>
+    <li>
+        <span>
+            {{ $t('message.education.languages.english') }}
+            <i @click='toggleEnglish' class='anchor fa-solid fa-square-arrow-up-right'></i>
+        </span>
     </li>
-    <li>ITALIAN - INTERMEDIATE</li>
+    <li>{{ $t('message.education.languages.italian') }}</li>
   </ul>
 </template>
 

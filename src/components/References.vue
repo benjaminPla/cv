@@ -1,7 +1,7 @@
 <template>
-  <h2>REFERENCES</h2>
+  <h2>{{ $t('message.references.title') }}</h2>
   <ul>
-    <li>CUMPA EMMANUEL</li>
+    <li>Cumpa Emmanuel</li>
     <li>
       <a href='mailto:emmanuel.cumpa@gmail.com'>
         <i class="fas fa-envelope-square"></i>
@@ -10,7 +10,7 @@
     </li>
   </ul>
   <ul class='mTop'>
-    <li>QUIROGA SEBASTIAN IGNACIO</li>
+    <li>Quiroga Sebastian Ignacio</li>
     <li>
       <a href='mailto:squiroga@gcacontadores.com.ar'>
         <i class="fas fa-envelope-square"></i>

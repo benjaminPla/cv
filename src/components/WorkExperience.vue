@@ -1,20 +1,23 @@
 <template>
-  <h2>WORK EXPERIENCE</h2>
-  <h3>2022 - PRESENT</h3>
+  <h2>{{ $t('message.workExperience.title') }}</h2>
+  <h3>2022 - {{ $t('message.workExperience.item1.title') }}</h3>
   <ul>
-    <li>FULL STACK DEVELOPER AT
-      <a href='https://www.linkedin.com/company/visma-latam/' target='_blank'>
-        VISMA LATAM
-      </a>
+    <li>
+        <span>
+            {{ $t('message.workExperience.item1.description') }}
+        </span>
+        <a href='https://www.linkedin.com/company/visma-latam/' target='_blank'>
+            VISMA LATAM
+        </a>
     </li>
   </ul>
   <h3>2014 - 2021</h3>
   <ul>
-    <li>ADMINISTRATIVE EMPLOYEE - HEALTH CARE AREA</li>
+    <li>{{ $t('message.workExperience.item2.description') }}</li>
   </ul>
   <h3>2011 - 2014</h3>
   <ul>
-    <li>FAMILY COMPANY - TEXTILE AREA</li>
+    <li>{{ $t('message.workExperience.item3.description') }}</li>
   </ul>
 </template>
 

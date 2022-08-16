@@ -1,5 +1,5 @@
 <template>
-  <h2>CONTACT</h2>
+  <h2>{{ $t('message.contact.title') }}</h2>
   <a href='https://www.linkedin.com/in/benjamin-pla/' target='_blank'>
     <i class="fab fa-linkedin"></i>
     <span>https://www.linkedin.com/in/benjamin-pla/</span>
@@ -22,9 +22,9 @@ export default {
 
 <style scoped lang='scss'>
 a {
-  display: block;
-  .fa-brands, .fab, .fas {
-    margin-right: 0.5rem;
-  }
+    display: block;
+    .fa-brands, .fab, .fas {
+        margin-right: 0.5rem;
+    }
 }
 </style>

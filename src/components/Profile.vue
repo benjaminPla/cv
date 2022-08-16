@@ -1,10 +1,6 @@
 <template>
-  <h2>PROFILE</h2>
-  <p>
-    I am 28 years old, I am passionate about music and programming.
-    I am a fast learner, detailed-oriented, organized,
-    team player and I am eager to learn.
-  </p>
+  <h2>{{ $t('message.profile.title') }}</h2>
+  <p>{{ $t('message.profile.text') }}</p>
 </template>
 
 <script>

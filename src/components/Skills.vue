@@ -1,5 +1,5 @@
 <template>
-    <h2>SKILLS</h2>
+    <h2>{{ $t('message.skills.title') }}</h2>
     <div class='container'>
       <div>
         <h3>FRONT-END</h3>
@@ -24,7 +24,7 @@
       </ul>
     </div>
     <div class='mLeft'>
-      <h3>OTHERS</h3>
+      <h3>{{ $t('message.skills.others') }}</h3>
       <ul>
         <li>SCRUM</li>
         <li>Git</li>
@@ -43,9 +43,9 @@ export default {
 
 <style scoped lang='scss'>
 .container {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
   .mLeft {
     margin-left: 5rem;
   }
