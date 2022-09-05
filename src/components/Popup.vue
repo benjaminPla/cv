@@ -19,26 +19,24 @@ export default {
 
 <style scoped lang='scss'>
 .container {
-  margin: 0;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 90%;
-  background: #dadada;
+  width: 100%;
+  height: 100%;
+  background: #ececec;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   .options {
     width: 100%;
-    height: 35px;
     text-align: right;
-    margin-bottom: 10px;
+    margin: 15px 0;
     .anchor {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-left: 10px;
     }
   }

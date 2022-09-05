@@ -1,6 +1,9 @@
 export default {
     en: {
         message: {
+            headers: {
+                cv: ' Curriculum vitae',
+            },
             profile: {
                 title: 'Profile',
                 text: 'I am 28 years old, I am passionate about music and programming. I am a fast learner, detailed-oriented, organized, team player and I am eager to learn.'
@@ -12,7 +15,7 @@ export default {
                 title: 'References',
             },
             skills: {
-                title: 'Skills',
+                title: 'Technical Skills',
                 others: 'Others',
             },
             workExperience: {
@@ -38,10 +41,19 @@ export default {
                     italian: 'Italian - Intermediate',
                 },
             },
+            changeLanguage: {
+                languages: {
+                    spanish: 'Spanish',
+                    english: 'English',
+                },
+            },
         }
     },
     es: {
         message: {
+            headers: {
+                cv: 'Currículum Vítae',
+            },
             profile: {
                 title: 'Perfil',
                 text: 'Tengo 29 años, soy un apasionado de la música y la programación. Aprendo rápido; soy detallista y organizado; me gusta trabajar en equipo y siempre estoy aprendiendo cosas nuevas.'
@@ -53,7 +65,7 @@ export default {
                 title: 'Referencias',
             },
             skills: {
-                title: 'Habilidades',
+                title: 'Habilidades Técnicas',
                 others: 'Otros',
             },
             workExperience: {
@@ -77,6 +89,12 @@ export default {
                     spanish: 'Español - Nativo',
                     english: 'Inglés - Intermedio Alto',
                     italian: 'Italiano - Intermedio',
+                },
+            },
+            changeLanguage: {
+                languages: {
+                    spanish: 'Español',
+                    english: 'Inglés',
                 },
             },
         }
