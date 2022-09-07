@@ -1,7 +1,7 @@
 export default {
     en: {
         message: {
-            headers: {
+            name: {
                 cv: ' Curriculum vitae',
             },
             profile: {
@@ -14,7 +14,7 @@ export default {
             references: {
                 title: 'References',
             },
-            skills: {
+            technicalSkills: {
                 title: 'Technical Skills',
                 others: 'Others',
             },
@@ -51,7 +51,7 @@ export default {
     },
     es: {
         message: {
-            headers: {
+            name: {
                 cv: 'Currículum Vítae',
             },
             profile: {
@@ -64,7 +64,7 @@ export default {
             references: {
                 title: 'Referencias',
             },
-            skills: {
+            technicalSkills: {
                 title: 'Habilidades Técnicas',
                 others: 'Otros',
             },

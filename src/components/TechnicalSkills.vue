@@ -1,5 +1,5 @@
 <template>
-    <h2>{{ $t('message.skills.title') }}</h2>
+    <h2>{{ $t('message.technicalSkills.title') }}</h2>
     <div class='container'>
       <div>
         <h3>FRONTEND</h3>
@@ -25,7 +25,7 @@
       </ul>
     </div>
     <div class='mLeft'>
-      <h3>{{ $t('message.skills.others') }}</h3>
+      <h3>{{ $t('message.technicalSkills.others') }}</h3>
       <ul>
         <li>Best Practicies</li>
         <li>Docker</li>

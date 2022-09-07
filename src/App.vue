@@ -72,7 +72,7 @@ export default {
 .app {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        padding: 25px;
+        padding: 55px 25px 25px 25px;
         .workExperience {
             background-color: #ececec;
         }
