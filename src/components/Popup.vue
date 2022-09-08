@@ -19,33 +19,33 @@ export default {
 
 <style scoped lang='scss'>
 .container {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #ececec;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  .options {
+    align-items: center;
+    background: #ececec;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 50%;
+    padding: 55px 25px 25px 25px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    text-align: right;
-    margin: 15px 0;
+  .options {
+        margin: 15px 0;
+        text-align: right;
+        width: 100%;
     .anchor {
-      font-size: 1.5rem;
-      margin-left: 10px;
+        font-size: 1.5rem;
+        margin-left: 10px;
     }
-  }
-  img {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 20px;
-    margin-bottom: 35px;
-  }
+}
+    img {
+        border-radius: 20px;
+        margin-bottom: 35px;
+        max-height: 90%;
+        max-width: 90%;
+        position: relative;
+    }
 }
 </style>
