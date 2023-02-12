@@ -6,7 +6,7 @@ export default {
             },
             profile: {
                 title: 'Profile',
-                text: 'I am 28 years old, I am passionate about music and programming. I am a fast learner, detailed-oriented, organized, team player and I am eager to learn.'
+                text: 'I am 30 years old, I am passionate about music and programming. I am a fast learner, detailed-oriented, organized, team player and I am eager to learn.'
             },
             contact: {
                 title: 'Contact',
@@ -56,7 +56,7 @@ export default {
             },
             profile: {
                 title: 'Perfil',
-                text: 'Tengo 29 años, soy un apasionado de la música y la programación. Aprendo rápido; soy detallista y organizado; me gusta trabajar en equipo y siempre estoy aprendiendo cosas nuevas.'
+                text: 'Tengo 30 años, soy un apasionado de la música y la programación. Aprendo rápido; soy detallista y organizado; me gusta trabajar en equipo y siempre estoy aprendiendo cosas nuevas.'
             },
             contact: {
                 title: 'Contacto',

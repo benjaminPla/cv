@@ -1,10 +1,10 @@
 <template>
-  <h2>{{ $t('message.profile.title') }}</h2>
-  <p>{{ $t('message.profile.text') }}</p>
+  <h2>{{ $t("message.profile.title") }}</h2>
+  <p>{{ $t("message.profile.text") }}</p>
 </template>
 
 <script>
 export default {
-  name: 'Profile',
+  name: "Profile",
 };
 </script>
