@@ -1,20 +1,20 @@
 <template>
   <h2>{{ $t('message.references.title') }}</h2>
   <ul>
+    <li>Fernandez Ponce Ezequiel</li>
+    <li>
+      <a href='mailto:info@ezfepo.com'>
+        <i class="fas fa-envelope-square"></i>
+        <span>info@ezfepo.com</span>
+      </a>
+    </li>
+  </ul>
+  <ul class='mTop'>
     <li>Cumpa Emmanuel</li>
     <li>
       <a href='mailto:emmanuel.cumpa@gmail.com'>
         <i class="fas fa-envelope-square"></i>
         <span>emmanuel.cumpa@gmail.com</span>
-      </a>
-    </li>
-  </ul>
-  <ul class='mTop'>
-    <li>Quiroga Sebastian Ignacio</li>
-    <li>
-      <a href='mailto:squiroga@gcacontadores.com.ar'>
-        <i class="fas fa-envelope-square"></i>
-        <span>squiroga@gcacontadores.com.ar</span>
       </a>
     </li>
   </ul>
