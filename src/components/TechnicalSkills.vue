@@ -18,11 +18,14 @@
       <ul>
         <li>API</li>
         <li>AWS</li>
+        <li>DNS</li>
         <li>GraphQL</li>
+        <li>Nginx</li>
         <li>NoSQL</li>
         <li>Node</li>
         <li>SQL</li>
-        <li>serverless</li>
+        <li>SSL</li>
+        <li>Serverless</li>
       </ul>
     </div>
     <div class="mLeft">
