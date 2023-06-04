@@ -4,10 +4,7 @@
   <ul>
     <li>
       2022 - MUG (Secure Coding)
-      <i
-        @click="toggleDiploma('mug')"
-        class="anchor fa-solid fa-square-arrow-up-right"
-      ></i>
+      <i @click="toggleDiploma('mug')" class="anchor fa-solid fa-image"></i>
     </li>
     <li>
       2021 -
@@ -22,10 +19,7 @@
         DIGITAL HOUSE
       </a>
       (Fullstack)
-      <i
-        @click="toggleDiploma('acamica')"
-        class="anchor fa-solid fa-square-arrow-up-right"
-      ></i>
+      <i @click="toggleDiploma('acamica')" class="anchor fa-solid fa-image"></i>
     </li>
     <li>
       2021 -
@@ -33,10 +27,7 @@
         ALKEMY
       </a>
       (Fullstack (React + Node))
-      <i
-        @click="toggleDiploma('alkemy')"
-        class="anchor fa-solid fa-square-arrow-up-right"
-      ></i>
+      <i @click="toggleDiploma('alkemy')" class="anchor fa-solid fa-image"></i>
     </li>
   </ul>
   <Popup v-if="diploma" @close="diploma = 0" :img="diploma" />
@@ -48,7 +39,7 @@
         {{ $t("message.education.languages.english") }}
         <i
           @click="toggleDiploma('english')"
-          class="anchor fa-solid fa-square-arrow-up-right"
+          class="anchor fa-solid fa-image"
         ></i>
       </span>
     </li>
