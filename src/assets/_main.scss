@@ -1,49 +1,92 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 100;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", "sans-serif";
+  font-style: normal;
 }
-html {
-    scroll-behavior: smooth;
-}
-h1,
-h2,
-h3 {
-  font-family: 'Montserrat', sans-serif !important;
-  text-transform: uppercase;
-}
-h1 {
-    font-size: calc(100% + 3vw);
-    font-weight: 700;
-}
-h2 {
-    font-size: calc(100% + 1vw);
-    font-weight: 600;
-}
-h3 {
-    font-size: calc(100% + 0.5vw);
-    font-weight: 600;
-}
-a,
-.anchor,
-a:focus,
-a:active {
+
+a {
+  color: inherit;
   text-decoration: none;
-  color: blue;
 }
-a:hover,
-.anchor:hover  {
-  cursor: pointer;
-  color: #000;
-}
+
 li {
   list-style: none;
 }
-.fas,
-.fab,
-.fa-regular {
-  font-family: "FontAwesome" !important;
+
+.page {
+  background-color: #e3e3e3;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* @media (min-width: 650px) { */
+/* } */
+/* @media (max-width: 650px) { */
+/* } */
+
+.content {
+  align-content: start;
+  background-color: #e3e3e3;
+  display: grid;
+  grid-column-gap: 50px;
+  height: 100%;
+  justify-content: center;
+  left: 50%;
+  margin: 50px 0 0 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  width: 100%;
+}
+
+.content-h1 {
+  grid-column: span 3;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 49px;
+  color: #1c1c1c;
+}
+
+.card {
+  background: #ffffff;
+  border-top: 3px solid #62a77d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 20px 0;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.card-header {
+  color: #487f5d;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  padding: 0 0 15px 0;
+}
+
+.card-info {
+  color: #1c1c1c;
+}
+
+.card-more {
+  color: #464646;
+  padding: 30px 0 0 0;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+  animation: scaleAnimation 0.2s ease-in-out forwards;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }

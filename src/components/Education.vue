@@ -1,97 +1,67 @@
 <template>
-  <h2>{{ $t("message.education.title") }}</h2>
-  <h3>{{ $t("message.education.diploma") }}</h3>
-  <ul>
-    <li>
-      2022 - MUG (Secure Coding)
-      <i @click="toggleDiploma('mug')" class="anchor fa-solid fa-image"></i>
-    </li>
-    <li>
-      2021 -
-      <a href="https://www.linkedin.com/school/acamica/" target="_blank">
-        ACAMICA
-      </a>
-      +
-      <a
-        href="https://www.linkedin.com/school/digitalhouseschool/"
-        target="_blank"
-      >
-        DIGITAL HOUSE
-      </a>
-      (Fullstack)
-      <i @click="toggleDiploma('acamica')" class="anchor fa-solid fa-image"></i>
-    </li>
-    <li>
-      2021 -
-      <a href="https://www.linkedin.com/company/alkemy2020/" target="_blank">
-        ALKEMY
-      </a>
-      (Fullstack (React + Node))
-      <i @click="toggleDiploma('alkemy')" class="anchor fa-solid fa-image"></i>
-    </li>
-  </ul>
-  <Popup v-if="diploma" @close="diploma = 0" :img="diploma" />
-  <h3>{{ $t("message.education.languages.title") }}</h3>
-  <ul>
-    <li>{{ $t("message.education.languages.spanish") }}</li>
-    <li>
-      <span>
-        {{ $t("message.education.languages.english") }}
-        <i
-          @click="toggleDiploma('english')"
-          class="anchor fa-solid fa-image"
-        ></i>
-      </span>
-    </li>
-    <li>{{ $t("message.education.languages.italian") }}</li>
-  </ul>
+  <div class="page">
+    <div class="content">
+      <div>
+        <h2>{{ $t("message.education.diploma") }}</h2>
+        <div class="card card-hover" @click="handleDiplomaClick('mug')">
+          <p class="card-header">2022</p>
+          <p class="card-info">Secure Coding</p>
+          <p class="card-more">MUG</p>
+        </div>
+        <div
+          class="card card-hover"
+          @click="handleDiplomaClick('acamicaDigitalHouse')"
+        >
+          <p class="card-header">2021</p>
+          <p class="card-info">Fullstack</p>
+          <p class="card-more">ACAMICA + DIGITAL HOUSE</p>
+        </div>
+        <div class="card card-hover" @click="handleDiplomaClick('alkemy')">
+          <p class="card-header">2021</p>
+          <p class="card-info">Fullstack</p>
+          <p class="card-more">ALKEMY</p>
+        </div>
+      </div>
+      <div>
+        <h2>{{ $t("message.education.languages.title") }}</h2>
+        <div class="card">
+          <p class="card-header">{{ $t("message.education.languages.spanish") }}</p>
+          <p class="card-info">
+            {{ $t("message.education.languages.native") }}
+          </p>
+        </div>
+        <div class="card card-hover" @click="handleDiplomaClick('english')">
+          <p class="card-header">{{ $t("message.education.languages.english") }}</p>
+          <p class="card-info">
+            {{ $t("message.education.languages.intermadiateHigh") }}
+          </p>
+        </div>
+        <div class="card">
+          <p class="card-header">{{ $t("message.education.languages.italian") }}</p>
+          <p class="card-info">
+            {{ $t("message.education.languages.intermadiate") }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-import { ref } from "vue";
-import Popup from "./Popup.vue";
-import mugImg from "../assets/mug_securecoding.jpg";
-import acamicaImg from "../assets/acamica_digitalhouse.jpg";
-import alkemyImg from "../assets/alkemy.jpg";
-import englishImg from "../assets/english_b2.jpg";
-
-export default {
-  name: "Education",
-  components: { Popup },
-  setup() {
-    /* eslint-disable */
-    const diploma = ref("");
-    const toggleDiploma = (diplomaName) => {
-      switch (diplomaName) {
-        case "mug":
-          diploma.value = {
-            src: mugImg,
-            alt: "MUG Secure Coding Diploma",
-          };
-          break;
-        case "acamica":
-          diploma.value = {
-            src: acamicaImg,
-            alt: "Acamica + Digital House Fullstack Diploma",
-          };
-          break;
-        case "alkemy":
-          diploma.value = { src: alkemyImg, alt: "Alkemy Fullstack Diploma" };
-          break;
-        case "english":
-          diploma.value = { src: englishImg, alt: "English B2 Diploma" };
-          break;
-      }
-    };
-    return { diploma, toggleDiploma };
-    /* eslint-enable */
-  },
+<script setup>
+const handleDiplomaClick = (diploma) => {
+  window.open(`https://benjaminpla.com/${diploma}.jpg`, "_blank");
 };
 </script>
 
 <style scoped lang="scss">
-svg {
-  width: 20.16px;
-  height: 23px;
+.content {
+  grid-template-columns: 300px 300px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 49px;
+    color: #1c1c1c;
+  }
 }
 </style>

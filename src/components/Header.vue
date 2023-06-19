@@ -1,161 +1,111 @@
 <template>
-    <header class='container'>
-        <i
-            class="fa-solid fa-bars hamburger"
-            @click='toggleMenu = !toggleMenu'>
-        </i>
-        <ul
-            class='menuOptionsMobile'
-            @click='toggleMenu = !toggleMenu'
-            v-show='toggleMenu'
-        >
-            <li>
-                <a href='#contact'>
-                    {{ $t('message.contact.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#education'>
-                    {{ $t('message.education.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#profile'>
-                    {{ $t('message.profile.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#references'>
-                    {{ $t('message.references.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#technicalSkills'>
-                    {{ $t('message.technicalSkills.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#workExperience'>
-                    {{ $t('message.workExperience.title') }}
-                </a>
-            </li>
-            <li>
-                <a @click='$i18n.locale = "en"'>
-                    {{ $t('message.changeLanguage.languages.english') }}
-                </a>
-                     | 
-                <a @click='$i18n.locale = "es"'>
-                    {{ $t('message.changeLanguage.languages.spanish') }}
-                </a>
-            </li>
-        </ul>
-        <ul class='menuOptionsDesktop'>
-            <li>
-                <a href='#contact'>
-                    {{ $t('message.contact.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#education'>
-                    {{ $t('message.education.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#profile'>
-                    {{ $t('message.profile.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#references'>
-                    {{ $t('message.references.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#technicalSkills'>
-                    {{ $t('message.technicalSkills.title') }}
-                </a>
-            </li>
-            <li>
-                <a href='#workExperience'>
-                    {{ $t('message.workExperience.title') }}
-                </a>
-            </li>
-            <li><Language/></li>
-        </ul>
-    </header>
+  <div>
+    <ul>
+      <li>
+        <router-link to="/profile" active-class="active-link">
+          {{ $t("message.profile.title") }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/education" active-class="active-link">
+          {{ $t("message.education.title") }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/technical-skills" active-class="active-link">
+          {{ $t("message.technicalSkills.title") }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/work-experience" active-class="active-link">
+          {{
+            $t(
+              "message.workExperienceAndReferences.titleWorkExperienceAndReferences"
+            )
+          }}
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/contact" active-class="active-link">
+          {{ $t("message.contact.title") }}
+        </router-link>
+      </li>
+      <li class="last" @click="displayLanguagesMenu = !displayLanguagesMenu">
+        <p>
+          <span>{{
+            $i18n.locale === "en"
+              ? $t("message.education.languages.english")
+              : $t("message.education.languages.spanish")
+          }}</span
+          ><i class="fa-solid fa-caret-down"></i>
+        </p>
+      </li>
+    </ul>
+    <ul class="languages" v-if="displayLanguagesMenu">
+      <li @click="($i18n.locale = 'es'), (displayLanguagesMenu = false)">
+        {{ $t("message.education.languages.spanish") }}
+      </li>
+      <li @click="($i18n.locale = 'en'), (displayLanguagesMenu = false)">
+        {{ $t("message.education.languages.english") }}
+      </li>
+    </ul>
+  </div>
 </template>
 
-<script>
-import { ref } from 'vue';
-import Language from './Language.vue';
+<script setup>
+import { ref } from "vue";
 
-export default{
-    name: 'Header',
-    components: { Language },
-    setup() {
-        const toggleMenu = ref(false);
-        return { toggleMenu };
-    },
-};
+const displayLanguagesMenu = ref(false);
 </script>
 
-<style scoped lang='scss'>
-a {
-    color: #000;
+<style scoped lang="scss">
+ul {
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  li {
+    color: #000000;
+    font-size: 15px;
+    font-style: normal;
     font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .last {
+    position: absolute;
+    right: 15px;
+
+    span {
+      margin: 0 3px 0 0;
+    }
+  }
+
+  li:hover,
+  .active-link {
+    cursor: pointer;
+    box-shadow: inset 0 -2px #62a77d;
+  }
 }
-@media (max-width: 650px) {
-    .container {
-        padding: 10px 15px;
-        position: absolute;
-        text-align: right;
-        width: 100vw;
-        .menuOptionsMobile {
-            background: #fff;
-            border-radius: 10px 10px 0 0;
-            bottom: 0;
-            overflow: hidden;
-            position: fixed;
-            right: 0;
-            text-align: center;
-            width: 100vw;
-            box-shadow: rgb(33 35 38 / 10%) 10px 10px 10px 10px;
-            li {
-                padding: 10px 0;
-            }
-            li:hover {
-                background-color: #ddd;
-            }
-        }
-        .menuOptionsDesktop {
-            display: none;
-        }
-    }
-}
-@media (min-width: 650px) {
-    .container {
-        background-color: #fff;
-        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-        padding: 10px 0;
-        position: fixed;
-        width: 100vw;
-        z-index: 100;
-        .hamburger {
-            display: none;
-        }
-        .menuOptionsMobile {
-            display: none;
-        }
-        .menuOptionsDesktop {
-            display: flex;
-            justify-content: space-around;
-            li {
-                display: inline-block;
-            }
-        }
-    }
-    .menuOptions {
-        display: none;
-    }
+
+.languages {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  right: 0;
+  top: 60px;
 }
 </style>
