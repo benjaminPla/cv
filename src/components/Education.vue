@@ -25,19 +25,25 @@
       <div>
         <h2>{{ $t("message.education.languages.title") }}</h2>
         <div class="card">
-          <p class="card-header">{{ $t("message.education.languages.spanish") }}</p>
+          <p class="card-header">
+            {{ $t("message.education.languages.spanish") }}
+          </p>
           <p class="card-info">
             {{ $t("message.education.languages.native") }}
           </p>
         </div>
         <div class="card card-hover" @click="handleDiplomaClick('english')">
-          <p class="card-header">{{ $t("message.education.languages.english") }}</p>
+          <p class="card-header">
+            {{ $t("message.education.languages.english") }}
+          </p>
           <p class="card-info">
             {{ $t("message.education.languages.intermadiateHigh") }}
           </p>
         </div>
         <div class="card">
-          <p class="card-header">{{ $t("message.education.languages.italian") }}</p>
+          <p class="card-header">
+            {{ $t("message.education.languages.italian") }}
+          </p>
           <p class="card-info">
             {{ $t("message.education.languages.intermadiate") }}
           </p>

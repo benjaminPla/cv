@@ -5,11 +5,14 @@
       <div class="card">
         <h2 class="card-header">FRONTEND</h2>
         <ul>
+          <li>Angular</li>
           <li>Bootstrap</li>
           <li>CSS + SCSS</li>
           <li>HTML</li>
           <li>JavaScript</li>
           <li>React</li>
+          <li>Routing</li>
+          <li>Redux + Vuex + NgRx</li>
           <li>Tailwind</li>
           <li>Vue</li>
         </ul>
@@ -33,10 +36,12 @@
       <div class="card">
         <h2 class="card-header">{{ $t("message.technicalSkills.others") }}</h2>
         <ul>
+          <li>Agile Methodologies</li>
           <li>Best Practicies</li>
-          <li>Docker</li>
+          <li>Docker + Docker Compose</li>
           <li>Figma</li>
           <li>Git</li>
+          <li>GitHub + GitLab + Bitbucket</li>
           <li>Jira</li>
           <li>Linux</li>
           <li>Postman</li>

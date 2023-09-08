@@ -6,7 +6,7 @@
     </div>
     <div class="profile-card">
       <div class="card-grid">
-        <img src="../assets/profile.jpg" />
+        <img src="../assets/profile.jpg" alt='profile picture' />
         <div class="profile-content">
           <h1>
             {{ $t("message.profile.iam") }}
