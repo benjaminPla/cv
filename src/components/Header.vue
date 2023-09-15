@@ -52,10 +52,10 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
+<script setup lang="ts">
+import { ref, Ref } from "vue";
 
-const displayLanguagesMenu = ref(false);
+const displayLanguagesMenu: Ref<boolean> = ref(false);
 </script>
 
 <style scoped lang="scss">

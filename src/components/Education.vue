@@ -53,8 +53,8 @@
   </div>
 </template>
 
-<script setup>
-const handleDiplomaClick = (diploma) => {
+<script setup lang="ts">
+const handleDiplomaClick = (diploma: string): void => {
   window.open(`https://benjaminpla.com/${diploma}.jpg`, "_blank");
 };
 </script>

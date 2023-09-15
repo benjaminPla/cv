@@ -55,12 +55,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Skills",
-};
-</script>
-
 <style scoped lang="scss">
 .content {
   grid-template-columns: repeat(3, 1fr);

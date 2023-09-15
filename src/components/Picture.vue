@@ -1,14 +1,8 @@
 <template>
-  <img src='../assets/profile.jpg' alt='profile' />
+  <img src="../assets/profile.jpg" alt="profile" />
 </template>
 
-<script>
-export default {
-  name: 'Picture',
-};
-</script>
-
-<style scoped lang='scss'>
+<style scoped lang="scss">
 img {
   border-radius: 50%;
   width: 60%;
