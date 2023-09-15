@@ -63,7 +63,8 @@ export default {
 
 <style scoped lang="scss">
 .content {
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 100px;
 
   ul {
     li {
