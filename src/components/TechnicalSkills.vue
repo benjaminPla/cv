@@ -48,6 +48,7 @@
           <li>Scrum</li>
           <li>Secure Coding</li>
           <li>TypeScript</li>
+          <li>Unit Testing</li>
         </ul>
       </div>
     </div>
