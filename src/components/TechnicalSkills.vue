@@ -37,6 +37,9 @@
         <h2 class="card-header">{{ $t("message.technicalSkills.others") }}</h2>
         <ul>
           <li>Agile Methodologies</li>
+          <li>Agile Methodologies</li>
+          <li>Authentication</li>
+          <li>Authorization</li>
           <li>Best Practicies</li>
           <li>Docker + Docker Compose</li>
           <li>Figma</li>
@@ -44,7 +47,11 @@
           <li>GitHub + GitLab + Bitbucket</li>
           <li>Jira</li>
           <li>Linux</li>
+          <li>OAuth 2.0</li>
+          <li>OIDC</li>
           <li>Postman</li>
+          <li>SAML</li>
+          <li>SSO</li>
           <li>Scrum</li>
           <li>Secure Coding</li>
           <li>TypeScript</li>
@@ -58,6 +65,7 @@
 <style scoped lang="scss">
 .content {
   grid-template-columns: repeat(3, 1fr);
+  height: auto;
   padding: 0 100px;
 
   ul {
