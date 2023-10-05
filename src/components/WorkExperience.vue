@@ -2,7 +2,11 @@
   <div class="page">
     <div class="content">
       <h1 class="content-h1">
-        {{ $t("message.workExperienceAndReferences.titleWorkExperience") }}
+        {{
+          $t(
+            "message.workExperienceAndReferences.titleWorkExperience"
+          )
+        }}
       </h1>
       <div class="card">
         <h2 class="card-header">2022/01 - 2022/09</h2>
@@ -89,6 +93,14 @@
       </h1>
       <div class="references">
         <div class="card">
+          <h2 class="card-header">Fernández Ponce Ezequiel</h2>
+          <a href="mailto:info@ezfepo.com" target="_blank">info@ezfepo.com</a>
+          <p class="card-more">
+            {{ $t("message.workExperienceAndReferences.projectLeader") }}
+            “7 ELEVEN”
+          </p>
+        </div>
+        <div class="card">
           <h2 class="card-header">Cumpa Emmanuel</h2>
           <a
             class="card-info"
@@ -101,14 +113,6 @@
             “TU RECIBO”
           </p>
         </div>
-        <div class="card">
-          <h2 class="card-header">Fernández Ponce Ezequiel</h2>
-          <a href="mailto:info@ezfepo.com" target="_blank">info@ezfepo.com</a>
-          <p class="card-more">
-            {{ $t("message.workExperienceAndReferences.projectLeader") }}
-            “7 ELEVEN”
-          </p>
-        </div>
       </div>
     </div>
   </div>
@@ -117,7 +121,7 @@
 <style scoped lang="scss">
 .content {
   grid-template-columns: 300px 300px;
-  grid-template-rows: auto 1fr auto 1fr;
+  /* grid-template-rows: auto 1fr auto 1fr; */
 
   .card {
     text-align: center;
