@@ -126,7 +126,7 @@
       width: 100%;
 
       i:hover {
-        animation: scaleAnimation 0.2s ease-in-out forwards;
+        color: #fff;
       }
     }
   }
