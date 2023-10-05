@@ -2,42 +2,8 @@
   <div class="page">
     <div class="content">
       <h1 class="content-h1">
-        {{
-          $t(
-            "message.workExperienceAndReferences.titleWorkExperienceAndReferences"
-          )
-        }}
+        {{ $t("message.workExperienceAndReferences.titleWorkExperience") }}
       </h1>
-      <div class="card">
-        <h2 class="card-header">
-          2022/09 - {{ $t("message.workExperienceAndReferences.present") }}
-        </h2>
-        <a href="https://www.southworks.com/" target="_blank">
-          <img
-            src="https://assets-global.website-files.com/636abc71ca837f75bb2e17dd/647f2be49ecc66fceaae892e_Logo_Tagline_Primary.svg"
-            alt="Southworks logo"
-          />
-        </a>
-        <p class="card-more">FULL STACK DEVELOPER</p>
-        <ul>
-          <li>
-            <span>{{
-              $t(
-                "message.workExperienceAndReferences.developmentAndMaintenance"
-              )
-            }}</span>
-            <a href="https://www.nba.com " target="_blank">NBA</a>
-          </li>
-          <li>
-            <span>{{
-              $t(
-                "message.workExperienceAndReferences.developmentAndMaintenance"
-              )
-            }}</span>
-            <a href="https://www.7-eleven.com/" target="_blank">7 Eleven</a>
-          </li>
-        </ul>
-      </div>
       <div class="card">
         <h2 class="card-header">2022/01 - 2022/09</h2>
         <a href="https://www.visma.com/" target="_blank">
@@ -89,31 +55,32 @@
         </ul>
       </div>
       <div class="card">
-        <h2 class="card-header">2021/01 - PRESENTE</h2>
-        <h3>FREELANCE</h3>
+        <h2 class="card-header">
+          2022/09 - {{ $t("message.workExperienceAndReferences.present") }}
+        </h2>
+        <a href="https://www.southworks.com/" target="_blank">
+          <img
+            src="https://assets-global.website-files.com/636abc71ca837f75bb2e17dd/647f2be49ecc66fceaae892e_Logo_Tagline_Primary.svg"
+            alt="Southworks logo"
+          />
+        </a>
         <p class="card-more">FULL STACK DEVELOPER</p>
         <ul>
           <li>
-            <a
-              href="https://benjaminpla.github.io/space_invaders/"
-              target="_blank"
-              >https://benjaminpla.github.io/space_invaders/</a
-            >
+            <span>{{
+              $t(
+                "message.workExperienceAndReferences.developmentAndMaintenance"
+              )
+            }}</span>
+            <a href="https://www.7-eleven.com/" target="_blank">7 Eleven</a>
           </li>
           <li>
-            <a href="http://13.53.192.193/" target="_blank"
-              >http://13.53.192.193/</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/alkemyTech/OT-90-Client" target="_blank"
-              >https://github.com/alkemyTech/OT-90-Client</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/alkemyTech/OT-90-server" target="_blank"
-              >https://github.com/alkemyTech/OT-90-server</a
-            >
+            <span>{{
+              $t(
+                "message.workExperienceAndReferences.developmentAndMaintenance"
+              )
+            }}</span>
+            <a href="https://unity.com/" target="_blank">Unity</a>
           </li>
         </ul>
       </div>
@@ -121,14 +88,6 @@
         {{ $t("message.workExperienceAndReferences.titleReferences") }}
       </h1>
       <div class="references">
-        <div class="card">
-          <h2 class="card-header">Fernández Ponce Ezequiel</h2>
-          <a href="mailto:info@ezfepo.com" target="_blank">info@ezfepo.com</a>
-          <p class="card-more">
-            {{ $t("message.workExperienceAndReferences.projectLeader") }}
-            “7 ELEVEN”
-          </p>
-        </div>
         <div class="card">
           <h2 class="card-header">Cumpa Emmanuel</h2>
           <a
@@ -142,6 +101,14 @@
             “TU RECIBO”
           </p>
         </div>
+        <div class="card">
+          <h2 class="card-header">Fernández Ponce Ezequiel</h2>
+          <a href="mailto:info@ezfepo.com" target="_blank">info@ezfepo.com</a>
+          <p class="card-more">
+            {{ $t("message.workExperienceAndReferences.projectLeader") }}
+            “7 ELEVEN”
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -149,7 +116,7 @@
 
 <style scoped lang="scss">
 .content {
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px;
   grid-template-rows: auto 1fr auto 1fr;
 
   .card {
@@ -191,7 +158,7 @@
     background-color: #e3e3e3;
     display: grid;
     grid-column-gap: 50px;
-    grid-column: span 3;
+    grid-column: span 2;
     grid-template-columns: 300px 300px;
     height: 100%;
     justify-content: center;
