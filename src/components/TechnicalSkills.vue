@@ -37,7 +37,6 @@
         <h2 class="card-header">{{ $t("message.technicalSkills.others") }}</h2>
         <ul>
           <li>Agile Methodologies</li>
-          <li>Agile Methodologies</li>
           <li>Authentication</li>
           <li>Authorization</li>
           <li>Best Practicies</li>
@@ -47,8 +46,7 @@
           <li>GitHub + GitLab + Bitbucket</li>
           <li>Jira</li>
           <li>Linux</li>
-          <li>OAuth 2.0</li>
-          <li>OIDC</li>
+          <li>OIDC + OAuth 2.0</li>
           <li>Postman</li>
           <li>SAML</li>
           <li>SSO</li>
