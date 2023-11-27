@@ -47,7 +47,7 @@
           <li>
             <span>{{
               $t(
-                "message.workExperienceAndReferences.developmentAndMaintenance"
+                "message.workExperienceAndReferences.developmentAndMaintenanceClient",
               )
             }}</span>
             <a href="https://www.turecibo.com" target="_blank">Tu Recibo</a>
@@ -55,9 +55,7 @@
         </ul>
       </div>
       <div class="card">
-        <h2 class="card-header">
-          2022/09 - {{ $t("message.workExperienceAndReferences.present") }}
-        </h2>
+        <h2 class="card-header">2022/09 - 2023/11</h2>
         <a href="https://www.southworks.com/" target="_blank">
           <img
             src="https://assets-global.website-files.com/636abc71ca837f75bb2e17dd/647f2be49ecc66fceaae892e_Logo_Tagline_Primary.svg"
@@ -69,7 +67,7 @@
           <li>
             <span>{{
               $t(
-                "message.workExperienceAndReferences.developmentAndMaintenance"
+                "message.workExperienceAndReferences.developmentAndMaintenanceClient",
               )
             }}</span>
             <a href="https://www.7-eleven.com/" target="_blank">7 Eleven</a>
@@ -77,10 +75,34 @@
           <li>
             <span>{{
               $t(
-                "message.workExperienceAndReferences.developmentAndMaintenance"
+                "message.workExperienceAndReferences.developmentAndMaintenanceClient",
               )
             }}</span>
             <a href="https://unity.com/" target="_blank">Unity</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 class="card-header">
+          2023/11 - {{ $t("message.workExperienceAndReferences.present") }}
+        </h2>
+        <a href="https://www.kayakomat.com" target="_blank">
+          <img
+            src="https://www.kayakomat.com/logo-black.png"
+            alt="Kayakomat logo"
+          />
+        </a>
+        <p class="card-more">FULL STACK DEVELOPER</p>
+        <ul>
+          <li>
+            <span>{{
+              $t(
+                "message.workExperienceAndReferences.developmentAndMaintenance",
+              )
+            }}</span>
+            <a href="https://www.kayakomat.com/logo-black.png" target="_blank"
+              >Kayakomat</a
+            >
           </li>
         </ul>
       </div>
@@ -109,6 +131,13 @@
             “7 ELEVEN”
           </p>
         </div>
+        <div class="card">
+          <h2 class="card-header">Ellinor Håkansson</h2>
+          <a href="mailto:ellhak@kth.se" target="_blank">ellhak@kth.se</a>
+          <p class="card-more">
+            {{ $t("message.workExperienceAndReferences.cto") }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -116,8 +145,7 @@
 
 <style scoped lang="scss">
 .content {
-  grid-template-columns: 300px 300px;
-  /* grid-template-rows: auto 1fr auto 1fr; */
+  grid-template-columns: 300px 300px 300px;
 
   .card {
     text-align: center;
@@ -158,8 +186,8 @@
     background-color: #e3e3e3;
     display: grid;
     grid-column-gap: 50px;
-    grid-column: span 2;
-    grid-template-columns: 300px 300px;
+    grid-column: span 3;
+    grid-template-columns: 300px 300px 300px;
     height: 100%;
     justify-content: center;
     width: 100vw;

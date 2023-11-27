@@ -20,12 +20,15 @@ export default {
         others: "Others",
       },
       workExperienceAndReferences: {
-        titleWorkExperience: "Work Experience",
+        cto: "Chief Technology Officer",
+        developmentAndMaintenanceClient:
+          "Development and maintenance for client: ",
+        developmentAndMaintenance: "Development and maintenance for: ",
+        present: "Presente",
+        projectLeader: "PROJECT LEADER OF ",
         titleReferences: "References",
         titleWorkExperienceAndReferences: "Work Experience and References",
-        present: "Presente",
-        developmentAndMaintenance: "Development and maintenance for client: ",
-        projectLeader: "PROJECT LEADER OF ",
+        titleWorkExperience: "Work Experience",
       },
       education: {
         title: "Education",
@@ -66,13 +69,15 @@ export default {
         others: "Otros",
       },
       workExperienceAndReferences: {
-        titleWorkExperience: "Experience Laboral",
+        cto: "Director de Tecnología",
+        developmentAndMaintenanceClient:
+          "Desarrollo y mantenimiento para el cliente: ",
+        developmentAndMaintenance: "Desarrollo y mantenimiento para: ",
+        present: "Presente",
+        projectLeader: "LÍDER DE PROYECTO DE ",
         titleReferences: "Referencias",
         titleWorkExperienceAndReferences: "Experiencia Laboral y Referencias",
-        present: "Presente",
-        developmentAndMaintenance:
-          "Desarrollo y mantenimiento para el cliente: ",
-        projectLeader: "LÍDER DE PROYECTO DE ",
+        titleWorkExperience: "Experience Laboral",
       },
       education: {
         title: "Educación",

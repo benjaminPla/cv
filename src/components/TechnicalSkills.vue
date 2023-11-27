@@ -10,9 +10,10 @@
           <li>CSS + SCSS</li>
           <li>HTML</li>
           <li>JavaScript</li>
+          <li>Next.js</li>
           <li>React</li>
-          <li>Routing</li>
           <li>Redux + Vuex + NgRx</li>
+          <li>Routing</li>
           <li>Tailwind</li>
           <li>Vue</li>
         </ul>
@@ -24,12 +25,13 @@
           <li>AWS</li>
           <li>DNS</li>
           <li>GraphQL</li>
+          <li>Next.js</li>
           <li>Nginx</li>
-          <li>NoSQL</li>
           <li>Node</li>
+          <li>NoSQL</li>
+          <li>Serverless</li>
           <li>SQL</li>
           <li>SSL</li>
-          <li>Serverless</li>
           <li>Terraform</li>
         </ul>
       </div>
@@ -42,16 +44,16 @@
           <li>Best Practicies</li>
           <li>Docker + Docker Compose</li>
           <li>Figma</li>
-          <li>Git</li>
           <li>GitHub + GitLab + Bitbucket</li>
+          <li>Git</li>
           <li>Jira</li>
           <li>Linux</li>
           <li>OIDC + OAuth 2.0</li>
           <li>Postman</li>
           <li>SAML</li>
-          <li>SSO</li>
           <li>Scrum</li>
           <li>Secure Coding</li>
+          <li>SSO</li>
           <li>TypeScript</li>
           <li>Unit Testing</li>
         </ul>
