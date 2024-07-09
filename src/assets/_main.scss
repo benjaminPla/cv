@@ -17,8 +17,7 @@ li {
 
 .page {
   background-color: #e3e3e3;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100%;
 }
 
 /* @media (min-width: 650px) { */
@@ -33,6 +32,7 @@ li {
   grid-column-gap: 50px;
   height: 100%;
   justify-content: center;
+  padding: 50px 0;
   text-align: center;
   width: 100%;
 }
@@ -49,7 +49,6 @@ li {
   background: #ffffff;
   border-top: 3px solid #62a77d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 20px 0;
   padding: 10px;
   text-align: left;
   word-wrap: break-word;
@@ -70,18 +69,4 @@ li {
 .card-more {
   color: #464646;
   padding: 30px 0 0 0;
-}
-
-.card-hover:hover {
-  cursor: pointer;
-  animation: scaleAnimation 0.2s ease-in-out forwards;
-}
-
-@keyframes scaleAnimation {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
 }

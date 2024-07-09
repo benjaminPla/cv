@@ -1,10 +1,12 @@
 <template>
-  <Header />
-  <Profile />
-  <Education />
-  <TechnicalSkills />
-  <WorkExperience />
-  <Contact />
+  <div class="main-container">
+    <Header />
+    <Profile />
+    <Education />
+    <TechnicalSkills />
+    <WorkExperience />
+    <Contact />
+  </div>
 </template>
 
 <script setup>
@@ -18,4 +20,9 @@ import Contact from "./components/Contact.vue";
 
 <style>
 @import "./assets/_main.scss";
+
+.main-container {
+  background-color: #e3e3e3;
+  padding: 0 15vw;
+}
 </style>

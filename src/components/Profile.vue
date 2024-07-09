@@ -1,37 +1,39 @@
 <template>
   <div id="profile" class="page">
-    <div class="background-container">
-      <img class="background-img" src="../assets/background-img.jpg" />
-      <div class="background-div" />
-    </div>
-    <div class="profile-card">
-      <div class="card-grid">
-        <img src="../assets/profile.jpg" alt="profile picture" />
-        <div class="profile-content">
-          <h1>
-            {{ $t("message.profile.iam") }}
-            <span class="h1-name">Benjamín Pla</span>
-          </h1>
-          <h2>Full stack developer</h2>
-          <p class="lined">
-            <span class="bold">{{ $t("message.profile.aboutMe") }}</span>
-            {{ $t("message.profile.aboutMeText") }}
-          </p>
-          <p>
-            <span class="bold">{{ $t("message.profile.qualities") }}</span>
-            {{ $t("message.profile.qualitiesText") }}
-          </p>
-        </div>
-        <div class="footer">
-          <a href="mailto:benjaminpla.dev@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://github.com/benjaminPla" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/benjamin-pla/" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+    <div class="content">
+      <div class="background-container">
+        <img class="background-img" src="../assets/background-img.jpg" />
+        <div class="background-div" />
+      </div>
+      <div class="profile-card">
+        <div class="card-grid">
+          <img src="../assets/profile.jpg" alt="profile picture" />
+          <div class="profile-content">
+            <h1>
+              {{ $t("message.profile.iam") }}
+              <span class="h1-name">Benjamín Pla</span>
+            </h1>
+            <h2>Full stack developer</h2>
+            <p class="lined">
+              <span class="bold">{{ $t("message.profile.aboutMe") }}</span>
+              {{ $t("message.profile.aboutMeText") }}
+            </p>
+            <p>
+              <span class="bold">{{ $t("message.profile.qualities") }}</span>
+              {{ $t("message.profile.qualitiesText") }}
+            </p>
+          </div>
+          <div class="footer">
+            <a href="mailto:benjaminpla.dev@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/benjaminPla" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/benjamin-pla/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -43,7 +45,10 @@
   display: grid;
   grid-template-rows: 3fr 1fr;
   height: 100%;
-  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
 
   .background-img {
     height: 75vh;
@@ -61,11 +66,8 @@
 .profile-card {
   background-color: #ffffff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -40%);
-  width: 70vw;
+  width: 100%;
+  z-index: 1;
 
   .card-grid {
     display: grid;

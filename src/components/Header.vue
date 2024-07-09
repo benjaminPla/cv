@@ -60,8 +60,9 @@ const displayLanguagesMenu: Ref<boolean> = ref(false);
 
 <style scoped lang="scss">
 .container {
+  left: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 
   ul {
