@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div id="profile" class="page">
     <div class="background-container">
       <img class="background-img" src="../assets/background-img.jpg" />
       <div class="background-div" />

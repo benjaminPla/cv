@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="container">
     <ul>
       <li>
-        <router-link to="/profile" active-class="active-link">
+        <a href="#profile">
           {{ $t("message.profile.title") }}
-        </router-link>
+        </a>
       </li>
       <li>
         <router-link to="/education" active-class="active-link">
@@ -20,7 +20,7 @@
         <router-link to="/work-experience" active-class="active-link">
           {{
             $t(
-              "message.workExperienceAndReferences.titleWorkExperienceAndReferences"
+              "message.workExperienceAndReferences.titleWorkExperienceAndReferences",
             )
           }}
         </router-link>
@@ -59,53 +59,59 @@ const displayLanguagesMenu: Ref<boolean> = ref(false);
 </script>
 
 <style scoped lang="scss">
-ul {
-  align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  padding: 20px 15px;
-  position: absolute;
+.container {
+  position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 
-  li {
-    color: #000000;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-
-  .last {
+  ul {
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 15px;
     position: absolute;
-    right: 15px;
+    width: 100%;
+    z-index: 100;
 
-    span {
-      margin: 0 3px 0 0;
+    li {
+      color: #000000;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: -0.05em;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+
+    .last {
+      position: absolute;
+      right: 15px;
+
+      span {
+        margin: 0 3px 0 0;
+      }
+    }
+
+    li:hover,
+    .active-link {
+      cursor: pointer;
+      box-shadow: inset 0 -2px #62a77d;
     }
   }
 
-  li:hover,
-  .active-link {
-    cursor: pointer;
-    box-shadow: inset 0 -2px #62a77d;
+  .languages {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    right: 0;
+    top: 60px;
   }
-}
-
-.languages {
-  background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0 0 4px 4px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  right: 0;
-  top: 60px;
 }
 </style>

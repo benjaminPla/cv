@@ -190,11 +190,6 @@
     grid-template-columns: 300px 300px 300px;
     height: 100%;
     justify-content: center;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -45%);
 
     .card {
       text-align: left;
