@@ -10,13 +10,13 @@ export default {
   },
   build: {
     outDir: "docs",
-    emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        entryFileNames: "[name].js",
-        chunkFileNames: "[name].js",
-        assetFileNames: "[name].[ext]",
-      },
-    },
+    // emptyOutDir: true,
+    // rollupOptions: {
+    // output: {
+    // entryFileNames: "[name].js",
+    // chunkFileNames: "[name].js",
+    // assetFileNames: "[name].[ext]",
+    // },
+    // },
   },
 };
