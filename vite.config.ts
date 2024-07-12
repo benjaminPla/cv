@@ -9,7 +9,7 @@ export default {
     __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: true,
   },
   build: {
-    outDir: "dist",
+    outDir: "docs",
     emptyOutDir: true,
     rollupOptions: {
       output: {
