@@ -1,9 +1,9 @@
 <template>
-  <div class="page">
-    <div class="content">
-      <h1 class="content-h1">
-        {{ $t("message.workExperienceAndReferences.titleWorkExperience") }}
-      </h1>
+  <div id="workExperienceAndReferences" class="content">
+    <h1 class="content-h1">
+      {{ $t("message.workExperienceAndReferences.titleWorkExperience") }}
+    </h1>
+    <div class="grid">
       <div class="card">
         <h2 class="card-header">2022/01 - 2022/09</h2>
         <a href="https://www.visma.com/" target="_blank">
@@ -106,10 +106,12 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="margin-top">
       <h1 class="content-h1">
         {{ $t("message.workExperienceAndReferences.titleReferences") }}
       </h1>
-      <div class="references">
+      <div class="grid">
         <div class="card">
           <h2 class="card-header">Cumpa Emmanuel</h2>
           <a
@@ -145,77 +147,50 @@
 
 <style scoped lang="scss">
 .content {
-  grid-template-columns: 300px 300px 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-  .card {
-    text-align: center;
-
-    img,
-    svg {
-      width: 200px;
-    }
-
-    .card-more {
-      padding: 10px 0 0 0;
-    }
-
-    ul {
-      padding: 20px 10px 10px 10px;
-      text-align: left;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 22px;
-      color: #464646;
-
-      li {
-        margin: 10px 0 0 0;
-
-        a {
-          text-decoration: underline;
-        }
-
-        a:hover {
-          color: #62a77d;
-        }
-      }
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 100%;
   }
 
-  .references {
-    align-content: start;
-    background-color: #e3e3e3;
-    display: grid;
-    grid-column-gap: 50px;
-    grid-column: span 3;
-    grid-template-columns: 300px 300px 300px;
-    height: 100%;
-    justify-content: center;
+  img,
+  svg {
+    width: 200px;
+  }
 
-    .card {
-      text-align: left;
+  .card-more {
+    padding: 10px 0 0 0;
+  }
 
-      .card-header {
-        color: #487f5d;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 0.06em;
-        padding: 0 0 15px 0;
-      }
+  ul {
+    padding: 20px 10px 10px 10px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #464646;
 
-      .card-info {
-        color: #1c1c1c;
-      }
+    li {
+      margin: 10px 0 0 0;
 
-      .card-more {
-        color: #464646;
-        padding: 30px 0 0 0;
-        font-size: 15px;
+      a {
+        text-decoration: underline;
       }
 
       a:hover {
-        box-shadow: inset 0 -2px #62a77d;
+        color: #62a77d;
       }
     }
   }
+}
+
+.margin-top {
+  margin-top: 30px;
+  width: 100%;
 }
 </style>

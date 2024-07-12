@@ -17,18 +17,18 @@
         </a>
       </li>
       <li>
-        <router-link to="/work-experience" active-class="active-link">
+        <a href="#workExperienceAndReferences">
           {{
             $t(
               "message.workExperienceAndReferences.titleWorkExperienceAndReferences",
             )
           }}
-        </router-link>
+        </a>
       </li>
       <li>
-        <router-link to="/contact" active-class="active-link">
+        <a href="#contact">
           {{ $t("message.contact.title") }}
-        </router-link>
+        </a>
       </li>
       <li class="last" @click="displayLanguagesMenu = !displayLanguagesMenu">
         <p>

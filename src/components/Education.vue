@@ -87,7 +87,6 @@
   }
 
   .card {
-    min-height: 150px;
     width: 100%;
   }
 
