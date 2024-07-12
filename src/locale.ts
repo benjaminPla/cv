@@ -20,7 +20,7 @@ export default {
         others: "Others",
       },
       workExperienceAndReferences: {
-        cto: "Chief Technology Officer",
+        cto: "CHIEF TECHNOLOGY OFFICER",
         developmentAndMaintenanceClient:
           "Development and maintenance for client: ",
         developmentAndMaintenance: "Development and maintenance for: ",

@@ -114,10 +114,7 @@
       <div class="grid">
         <div class="card">
           <h2 class="card-header">Cumpa Emmanuel</h2>
-          <a
-            class="card-info"
-            href="mailto:emmanuel.cumpa@gmail.com"
-            target="_blank"
+          <a class="mail" href="mailto:emmanuel.cumpa@gmail.com" target="_blank"
             >emmanuel.cumpa@gmail.com</a
           >
           <p class="card-more">
@@ -127,7 +124,9 @@
         </div>
         <div class="card">
           <h2 class="card-header">Fernández Ponce Ezequiel</h2>
-          <a href="mailto:info@ezfepo.com" target="_blank">info@ezfepo.com</a>
+          <a class="mail" href="mailto:info@ezfepo.com" target="_blank"
+            >info@ezfepo.com</a
+          >
           <p class="card-more">
             {{ $t("message.workExperienceAndReferences.projectLeader") }}
             “7 ELEVEN”
@@ -135,7 +134,9 @@
         </div>
         <div class="card">
           <h2 class="card-header">Ellinor Håkansson</h2>
-          <a href="mailto:ellhak@kth.se" target="_blank">ellhak@kth.se</a>
+          <a class="mail" href="mailto:ellhak@kth.se" target="_blank"
+            >ellhak@kth.se</a
+          >
           <p class="card-more">
             {{ $t("message.workExperienceAndReferences.cto") }}
           </p>
@@ -160,7 +161,7 @@
 
   img,
   svg {
-    width: 200px;
+    width: 100%;
   }
 
   .card-more {
@@ -187,6 +188,10 @@
       }
     }
   }
+}
+
+.mail {
+  word-break: break-all;
 }
 
 .margin-top {
