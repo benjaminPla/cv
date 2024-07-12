@@ -1,6 +1,7 @@
 import vue from "@vitejs/plugin-vue";
 
 export default {
+  base: "/cv/",
   plugins: [vue()],
   define: {
     __VUE_PROD_DEVTOOLS__: false,
@@ -10,13 +11,13 @@ export default {
   },
   build: {
     outDir: "docs",
-    // emptyOutDir: true,
-    // rollupOptions: {
-    // output: {
-    // entryFileNames: "[name].js",
-    // chunkFileNames: "[name].js",
-    // assetFileNames: "[name].[ext]",
-    // },
-    // },
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: "[name].js",
+        chunkFileNames: "[name].js",
+        assetFileNames: "[name].[ext]",
+      },
+    },
   },
 };
