@@ -59,6 +59,7 @@
     grid-template-columns: 2fr 3fr;
     letter-spacing: 0.05em;
     place-items: center;
+    text-align: left;
 
     img {
       height: 100%;
