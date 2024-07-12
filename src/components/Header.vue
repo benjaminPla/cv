@@ -7,14 +7,14 @@
         </a>
       </li>
       <li>
-        <router-link to="/education" active-class="active-link">
+        <a href="#education">
           {{ $t("message.education.title") }}
-        </router-link>
+        </a>
       </li>
       <li>
-        <router-link to="/technical-skills" active-class="active-link">
+        <a href="#technicalSkills">
           {{ $t("message.technicalSkills.title") }}
-        </router-link>
+        </a>
       </li>
       <li>
         <router-link to="/work-experience" active-class="active-link">

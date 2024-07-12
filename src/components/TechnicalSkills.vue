@@ -1,7 +1,7 @@
 <template>
-  <div class="page">
-    <div class="content">
-      <h1 class="content-h1">{{ $t("message.technicalSkills.title") }}</h1>
+  <div id="technicalSkills" class="content">
+    <h1 class="content-h1">{{ $t("message.technicalSkills.title") }}</h1>
+    <div class="grid">
       <div class="card">
         <h2 class="card-header">FRONTEND</h2>
         <ul>
@@ -64,16 +64,23 @@
 
 <style scoped lang="scss">
 .content {
-  grid-template-columns: repeat(3, 1fr);
-  height: auto;
-  padding: 0 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-  ul {
-    li {
-      color: #1c1c1c;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      line-height: 176%;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 100%;
+
+    ul {
+      li {
+        color: #1c1c1c;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        line-height: 176%;
+      }
     }
   }
 }
